@@ -1,8 +1,13 @@
 .App {
   text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+
+  
 }
+
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 5px black;
+  -webkit-text-stroke: 0.5px yellow;
 }
 /* write your parent styles in here for your App.js */

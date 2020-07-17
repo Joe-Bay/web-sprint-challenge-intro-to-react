@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a toolkit with the tools that allow us to build more advanced UI that changes with data and variables easier than manually manipulating the DOM.
+
 1. Describe component state.
+
+a componenet state is kind of like a variable that holds a value and when it changes the component rerenders
 
 1. Describe props.
 
+Props are properties that are data from a parent component that can be passed down to it's children
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are essentially an actual side effect when you do something. Like adding a click handler to a button but not getting rid of it before clicking it again, essentially giving you two of them. You can sync side effects to changes by setting a variable to change only when a certain props does or a value changes that you set.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
