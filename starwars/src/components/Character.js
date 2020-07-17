@@ -17,6 +17,7 @@ h1{
     font-size: 3rem;
     &:hover{
         color: crimson;
+        font-size: 4rem;
         transition: 1s;
     }
 }

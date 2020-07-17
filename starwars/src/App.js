@@ -5,12 +5,19 @@ import axios from 'axios'
 import styled from 'styled-components'
 
 
+
+
 const AppDiv = styled.div`
 
 .Header{
   font-size: 5rem;
-  color: red;
+  color: black;
   text-shadow: 3px, 2px;
+  &:hover{
+    color: red;
+    transition: 2.5s;
+    transform: skew(180deg);
+  }
 
 }
 
@@ -46,7 +53,7 @@ const App = () => {
 
   return (
     <AppDiv className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">STAR WARS</h1>
       {
 
         <Characters chars={chars}/>
