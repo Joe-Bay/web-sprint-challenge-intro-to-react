@@ -3,11 +3,11 @@ import React from 'react'
 
 const Character = props => {
     const { chars } = props
-
+console.log(chars)
 
 
     return (
-        <div>
+        <div className="chContainer">
             <h1>{chars.name}</h1>
         </div>
     )

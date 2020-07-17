@@ -1,4 +1,4 @@
-import React, { useState, effectState, useEffect}from 'react';
+import React, { useState, useEffect}from 'react';
 import './App.css';
 import Characters from './components/Characters'
 import axios from 'axios'
@@ -8,7 +8,6 @@ const App = () => {
   // the state properties here.
 
     const [chars, setChar] = useState(" ")
-    console.log(`this is setChar === ${chars}`)
 
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
@@ -27,10 +26,18 @@ const App = () => {
     }, [])
 
 
+
+
+
+
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <Characters chars={chars}/>
+      {
+
+        <Characters chars={chars}/>
+
+      }
     </div>
   );
 }

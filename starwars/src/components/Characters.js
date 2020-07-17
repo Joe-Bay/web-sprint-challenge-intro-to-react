@@ -3,19 +3,27 @@ import Character from './Character'
 
 const Characters = (props) => {
     const { chars } = props;
-console.log(`this is what im looking at ${chars}`)
+    console.log(chars[0].name)
 
+return null
+    // chars.map(characters => {
+    //     return(
+    //         <div className="characterContainer">
+    //             <Character key={characters.name}
+    //             chars={characters.name}
+    //             />
+    //         </div>
+    //     )
+    // })
+}
 
+//     return (
+//         <div className="character-container">
+//     {
+//          props.chars.map(function(characters){ return <Character key={characters.name} chars={characters} />})
+//     }
+//         </div>
+//     )
 
-    return (
-        <div className="character-container">
-    {
-
-        //  props.chars.map(function(characters){ return <Character key={characters.name} chars={characters} />})
-        // <Character chars={chars[0]}/>
-    }
-        </div>
-    )
-
-};
-export default Characters;
+// };
+export default Characters
