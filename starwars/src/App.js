@@ -14,7 +14,7 @@ const AppDiv = styled.div`
   color: black;
   text-shadow: 3px, 2px;
   &:hover{
-    color: red;
+    color: darkred;
     transition: 2.5s;
     transform: skew(180deg);
   }

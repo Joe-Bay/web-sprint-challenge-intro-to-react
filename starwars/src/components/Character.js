@@ -9,6 +9,7 @@ const CharacterStyles = styled.div`
 margin-right: 20%;
 margin-left: 20%;
 background-image: linear-gradient(to top, red, black, black);
+opacity: 0.9;
 border-radius: 10px;
 
 
