@@ -5,7 +5,21 @@ const Characters = (props) => {
     const { chars } = props;
     console.log(chars[0].name)
 
-return null
+    // const newArray = chars.map(people =>{})
+    // console.log(newArray)
+    const newArray = [...chars]
+    console.log(newArray)
+
+
+ return (
+    <div className="characterContainer"> 
+
+{
+    newArray.map(people => <Character chars={people}/>)
+
+}
+    </div>
+ )
     // chars.map(characters => {
     //     return(
     //         <div className="characterContainer">
@@ -15,7 +29,8 @@ return null
     //         </div>
     //     )
     // })
-}
+ }
+
 
 //     return (
 //         <div className="character-container">

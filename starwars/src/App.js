@@ -2,6 +2,20 @@ import React, { useState, useEffect}from 'react';
 import './App.css';
 import Characters from './components/Characters'
 import axios from 'axios'
+import styled from 'styled-components'
+
+
+const AppDiv = styled.div`
+
+.Header{
+  font-size: 5rem;
+  color: red;
+  text-shadow: 3px, 2px;
+
+}
+
+
+`
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -31,14 +45,14 @@ const App = () => {
 
 
   return (
-    <div className="App">
+    <AppDiv className="App">
       <h1 className="Header">Characters</h1>
       {
 
         <Characters chars={chars}/>
 
       }
-    </div>
+    </AppDiv>
   );
 }
 
